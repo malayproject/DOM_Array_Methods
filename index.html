@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Array Methods</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="resources/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="resources/fontawesome-free-5.13.1-web/css/all.css"
+    />
+  </head>
+  <body>
+    <h1>DOM Array Methods</h1>
+    <div class="container" id="container">
+      <aside>
+        <button type="button" class="addUser" id="addUser">
+          <span class="addUserSp" id="addUserSp">add user</span>
+          <i
+            class="fa fa-user-plus"
+            id="userPlusI"
+            aria-hidden="true"
+            style="font-size: large;"
+          ></i>
+        </button>
+        <button type="button" class="doubleMoney" id="doubleMoney">
+          <span class="doubleMoneySp" id="doubleMoneySp">double money</span>
+          <i
+            class="fa fa-coins"
+            id="coinsI"
+            aria-hidden="true"
+            style="font-size: large;"
+          ></i>
+        </button>
+        <button type="button" class="showMillionaires" id="showMillionaires">
+          <span class="showMillionairesSp" id="showMillionairesSp">
+            show millionaires
+          </span>
+          <i
+            class="fa fa-money-bill-alt"
+            id="moneyBillAltI"
+            aria-hidden="true"
+            style="font-size: large;"
+          ></i>
+        </button>
+        <button type="button" class="sortByWealth" id="sortByWealth">
+          <span class="sortByWealthSp" id="sortByWealthSp">
+            sort by wealth
+          </span>
+          <i
+            class="fa fa-sort-amount-up"
+            id="sortAmountUpI"
+            aria-hidden="true"
+            style="font-size: large;"
+          ></i>
+        </button>
+        <button
+          type="button"
+          class="calculateWealthPool"
+          id="calculateWealthPool"
+        >
+          <span class="calculateWealthPoolSp" id="calculateWealthPoolSp">
+            calculate wealth pool
+          </span>
+          <i
+            class="calculateWealthPoolI"
+            id="calculateWealthPoolI"
+            style="font-size: large;"
+            ><svg
+              id="Capa_1"
+              enable-background="new 0 0 467.765 467.765"
+              height="18"
+              viewBox="0 0 467.765 467.765"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m380.063 467.765h-292.32c-10.933 0-20.968-6.099-25.978-15.802-5.01-9.704-4.182-21.402 2.155-30.293l134.084-188.172-134.083-187.346c-6.366-8.906-7.222-20.604-2.212-30.322 5.009-9.717 15.043-15.83 25.991-15.83h292.362c16.143 0 29.232 13.066 29.232 29.182v58.364h-58.464v-29.182h-206.322l113.174 158.121c7.251 10.131 7.265 23.739.043 33.884l-113.317 159.032h206.422v-29.342h58.464v58.524c0 16.115-13.089 29.181-29.231 29.182z"
+              />
+            </svg>
+          </i>
+        </button>
+      </aside>
+      <div class="table" id="table">
+        <div class="headers" id="headers"><strong>People</strong> Wealth</div>
+        <div class="entries" id="entries"></div>
+      </div>
+    </div>
+    <div class="flatIconRef" id="flatIconRef">
+      Icons made by<a
+        href="https://www.flaticon.com/authors/those-icons"
+        title="Those Icons"
+        >Those Icons</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
