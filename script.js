@@ -13,11 +13,16 @@ class User {
     this.wealth = Math.floor(Math.random() * 2000000);
   }
 }
+var moneyFormat = (num) => {
+  return num.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+};
 var populateTable = () => {
   elEntries.innerHTML = "";
   for (let item of userData) {
     var innerHtmlAdd = `<div class="entry" id="entry${userData.length - 1}">
-    <strong>${item.firstName} ${item.lastName}</strong> ${item.wealth}</div>`;
+    <strong>${item.firstName} ${item.lastName}</strong> &#x20B9;${moneyFormat(
+      item.wealth
+    )}</div>`;
     elEntries.innerHTML += innerHtmlAdd;
   }
 };
@@ -70,7 +75,7 @@ var calcWealth = () => {
   sum = userData.map((item) => item.wealth).reduce((a, b) => a + b);
   console.log(sum);
   var innerHtmlAdd = `<div class="entry total" id="total">
-    <strong>Total</strong> ${sum}</div>`;
+    <strong>Total</strong> &#x20B9;${moneyFormat(sum)}</div>`;
   elEntries.innerHTML += innerHtmlAdd;
 };
 
